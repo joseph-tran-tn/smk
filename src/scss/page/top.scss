@@ -1,0 +1,269 @@
+@charset 'UTF-8';
+@import '../utility/*';
+
+.fadeInUp {animation: 1.5s fadeInUp forwards;}
+
+section {background: $background; padding: 60px 0;
+  @include max-screen(767px) {padding: 30px 0;}
+  .titleGroup {position: relative; padding: 60px 0 50px;
+    .bigText {@include font-size(125); opacity: 0.5; position: absolute; text-align: center; width: 100%; top: 30px; line-height: 1; @include ffNS;
+      @include max-screen(767px) {@include font-size(90);}
+    }
+    .smallText {@include font-size(20); color: #fff; position: relative; letter-spacing: 1px;
+      @include max-screen(767px) {@include font-size(14);}
+    }
+    .mainText {@include font-size(36); color: #fff; position: relative; @include ffNS; text-transform: uppercase;
+      @include max-screen(767px) {@include font-size(26);}
+      span {color: $color2;}
+    }
+  }
+  .groupBox {
+    &__wrap {display: flex; margin: 0 -15px;
+      @include max-screen(1240px) {margin: 0;}
+      @include max-screen(767px) {display: block;}
+      &.hide {
+        .groupBox__item {opacity: 0;}
+      }
+      &.animation {
+        .groupBox__item {animation: 1.5s fadeInUp forwards;}
+      }
+    }
+    &__item {padding: 0 15px; color: #fff; flex: 1; position: relative;
+      &:nth-child(2n) {top: 40px;
+        @include max-screen(767px) {top: 0;}
+        .groupBox__item__icon {margin-bottom: 25px;}
+      }
+      &:nth-child(2n) {
+        .groupBox__item__icon {margin-bottom: 25px;}
+      }
+      @include max-screen(1240px) {padding-left: 5px; padding-right: 5px;}
+      @include max-screen(767px) {padding: 0 15px; margin-bottom: 25px;}
+      &__inner {padding: 40px 30px; background: #222; height: 100%; transition: $transition;
+        @include max-screen(767px) {padding: 35px 20px 25px;}
+      }
+      &__icon {margin: 0 0 15px; transition: $transition;
+        img {display: block;}
+        @include max-screen(767px) {float: left; width: 57px;}
+      }
+      &__title {@include ffNS; @include font-size(24); margin-bottom: 30px; position: relative; line-height: 1.1;
+        &:after {content: ""; display: block; width: 40px; background: $color2; height: 1px; position: absolute; bottom: -15px;
+          @include max-screen(767px) {display: none;}
+        }
+        @include max-screen(767px) {float: left; width: calc(100% - 57px); padding-left: 20px; margin-bottom: 0; @include font-size(20);}
+      }
+      &__desc {@include font-size(15);
+        @include max-screen(767px) {clear: both; @include font-size(15);}
+      }
+      @include min-screen(768px) {
+        &:hover {
+          .groupBox__item__inner {background: $color2;}
+          .groupBox__item__icon {filter: brightness(10);}
+        }
+      }
+    }
+  }
+}
+
+.section {
+  &--half {padding: 0; background: #4B4843;
+    &__inner {display: flex;
+      @include max-screen(767px) {display: block;}
+    }
+    &__left, &__right {position: relative; width: 50%;
+      @include max-screen(767px) {width: auto;}
+    }
+    &__left {background-size: cover;
+      @include max-screen(767px) {height: 216px;}
+    }
+    .mainText {text-align: center; position: absolute; top: 50%; transform: translate(-50%, -50%); color: #fff; @include font-size(38); @include ffNS; left: 50%; line-height: 1.1; letter-spacing: 2px;}
+    &__title {@include ffNS; @include font-size(27); color: #fff; position: relative; padding-bottom: 27px; margin-bottom: 21px; line-height: 41px; letter-spacing: 1px; opacity: 0;
+      @include max-screen(767px) {@include font-size(20); line-height: 2.4rem;}
+      span {color: $color; @include font-size(64);
+        @include max-screen(767px) {@include font-size(54);}
+      }
+      &:after {content: ""; display: block; width: 40px; background: $color2; height: 1px; position: absolute; bottom: 0;
+        @include max-screen(767px) {background: #fff;}
+      }
+    }
+    &__desc {color: #fff; opacity: 0;}
+    &__right {padding: 90px 90px 80px;
+      @include max-screen(1240px) {padding: 40px;}
+      @include max-screen(767px) {@include font-size(16); padding: 45px 30px;}
+    }
+  }
+}
+
+.section01 {padding-bottom: 130px;
+  @include max-screen(767px) {padding-bottom: 20px;}
+  .container {max-width: 1210px;}
+}
+
+.section03 {background: #272727; padding: 75px 0;
+  @include max-screen(767px) {padding: 107px 0;}
+  .titleGroup {@include ffNS; position: relative; padding: 0;
+    .bigText {@include font-size(126); font-weight: bold; position: absolute; top: 50%; width: 100%; text-align: center; transform: translateY(-50%); opacity: 0.5;
+      @include max-screen(767px) {@include font-size(90);}
+    }
+    .mainText {@include font-size(36); color: $color2; position: relative; z-index: 2; top: 12px;
+      @include max-screen(767px) {@include font-size(26);}
+      span {color: #fff;}
+    }
+  }
+}
+
+a.cover_atag {display: block; position: absolute; top: 0; left: 0; right: 0; bottom: 0; color: transparent;}
+
+.section04 {
+  .section--half {
+    &__inner {}
+    &__left {padding-top: 50%; background: #4B4843; transition: 1s ease all; z-index: 2;
+      @include min-screen(768px) {
+        &:hover {box-shadow: 0 0 25px 5px rgba(0,0,0,.1); z-index: 2;
+          .mainText img {transform: scale(1.2,1.2);}
+        }
+      }
+      @include max-screen(767px) {height: auto;}
+      .mainText {width: 100%; text-transform: uppercase;
+        @include max-screen(1240px) {padding: 0 15px;}
+        @include max-screen(767px) {transform: translate(-50%, -60%)}
+        span {
+          @include max-screen(767px) {position: absolute; bottom: -20px; left: 0; width: 100%; text-align: center; @include font-size(14);}
+        }
+        img {display: block; margin: 100px auto 0; padding: 0 35px; transition: 1s ease all;
+          @include max-screen(1240px) {margin-top: 40px;}
+          @include max-screen(767px) {margin: 0 auto; width: 51.12%; padding: 0;}
+        }
+      }
+    }
+    &__right {padding: 0;
+      .products {
+        @include max-screen(767px) {@include clearfix}
+        &__item {background: #fff center no-repeat; float: left; width: 50%; padding-top: 50%; position: relative; transition: 1s ease all; background-size: 100% 100%;
+          @include min-screen(768px) {
+            &:hover {box-shadow: 0 0 25px 5px rgba(0,0,0,.1); z-index: 2;
+              &:nth-child(1) {background-size: 120% 120%;}
+              &:nth-child(2) {background-size: 120% 120%;}
+              &:nth-child(3) {background-size: 120% 120%;}
+              &:nth-child(4) {background-size: 120% 120%;}
+            }
+          }
+          &:nth-child(2) {
+            @include max-screen(767px) {
+              background-color: rgb(164,164,164) !important;
+              background-size: 80% auto !important;
+              background-position: right center !important;
+            }
+          }
+          &:nth-child(3) {
+            @include max-screen(767px) {
+              background-color: rgb(164,164,164) !important;
+              background-image: url(../../img/home/pro04_sp@2x.png) !important; 
+              background-size: 80% auto !important;
+              background-position: center center !important;
+            }
+          }
+          span {position: absolute; color: #434343; @include font-size(20); @include ffNS; bottom: 30px; left: 30px; text-transform: uppercase;
+            @include max-screen(767px) {@include font-size(14); left: 15px; bottom: 15px; max-width: 80%;}
+          }
+        }
+      }
+    }
+  }
+}
+
+.section05 {
+  .section--half {
+    &__inner {}
+    &__left {order: 1;
+      @include max-screen(767px) {order: 2; height: auto;}
+    }
+    &__right {padding: 50% 0 0 0; background: #4B4843 center no-repeat; background-size: 100% 100%; order: 2; transition: 1s ease all; z-index: 2;
+      @include min-screen(768px) {
+        &:hover {box-shadow: 0 0 25px 5px rgba(0,0,0,.1); z-index: 2; background-size: 110% 110%;}
+      }
+      @include max-screen(767px) {order: 1; background: url(../../img/home/sec05_bg@2x.png) center no-repeat !important; background-size: cover!important;}
+      .mainText {width: 100%; text-transform: uppercase; text-align: left; padding-left: 85px; margin-top: -70px;
+        @include max-screen(1240px) {padding-left: 40px;}
+        @include max-screen(767px) {@include font-size(15); padding: 0; margin: 0; transform: none; top: 30px; bottom: auto; right: auto; left: 15px; width: auto;}
+        img {display: block; margin: 100px auto 0; transition: 1s ease all;}
+        span {display: block;}
+        &__sub {@include font-size(22);
+          @include max-screen(767px) {@include font-size(15); text-transform: capitalize;}
+        }
+      }
+    }
+    &__left {padding: 0;
+      .products {
+        @include max-screen(767px) {@include clearfix}
+        &__item {background: #AFAFAF center no-repeat; float: left; width: 50%; padding-top: 50%; position: relative; background-size: 100% 100%; transition: 1s ease all;
+          @include min-screen(768px) {
+            &:hover {box-shadow: 0 0 25px 5px rgba(0,0,0,.1); z-index: 2; background-size: 120% 120%;
+            }
+          }
+          // &:nth-child(1),
+          // &:nth-child(4) {background-color: #A4A4A4;}
+          &:nth-child(1) {
+            @include max-screen(767px) {background: url(../../img/home/pro06_sp@2x.png) center no-repeat!important; background-size: cover!important;}
+          }
+          &:nth-child(2) {background-position: right center;
+            @include max-screen(767px) {background: url(../../img/home/pro07_sp@2x.png) center no-repeat!important; background-size: cover!important;}
+          }
+          &:nth-child(3) {
+            @include max-screen(767px) {background: url(../../img/home/pro08_sp@2x.png) center no-repeat!important; background-size: cover!important;}
+          }
+          &:nth-child(4) {
+            @include max-screen(767px) {background: url(../../img/home/pro09_sp@2x.png) center no-repeat!important; background-size: cover!important;}
+          }
+          // img {position: absolute; top: 0; right: 0;}
+          @include max-screen(1240px) {background-size: contain;}
+          span {position: absolute; color: #434343; @include font-size(20); @include ffNS; bottom: 30px; left: 30px; text-transform: uppercase;
+            @include max-screen(767px) {left: 15px; @include font-size(14); bottom:15px;}
+          }
+        }
+      }
+    }
+  }
+}
+
+.section06 {background: url(../../img/home/bgExperience.png) center no-repeat; background-size: cover; padding: 90px 0 30px;
+  @include max-screen(767px) {background-image: url(../../img/home/sec06_bg@2x.png); padding: 50px 15px;}
+  .flex {display: flex;
+    @include max-screen(767px) {display: block;}
+  }
+  &__img01 {flex: 0 0 220px;
+    @include min-screen(768px) {opacity: 0;}
+    @include max-screen(767px) {flex: unset;}
+    img {display: block;
+      @include max-screen(767px) {margin: 35px auto; width: 198px;}
+    }
+  }
+  &__text {color: #fff; padding: 0 50px; position: relative; top: -10px;
+    @include min-screen(768px) {opacity: 0;}
+    @include max-screen(767px) {flex: unset; padding: 0;}
+    &__bigTitle {@include ffNS; color: $color2; @include font-size(42); margin-bottom: 10px; text-transform: uppercase; line-height: 1;
+      @include max-screen(767px) {@include font-size(24);}
+    }
+    &__title {@include ffNS; @include font-size(19); margin-bottom: 20px; padding-bottom: 20px; position: relative;
+      @include max-screen(767px) {@include font-size(17);}
+      &:after {
+        content: "";
+        display: block;
+        width: 40px;
+        background: $color2;
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+    &__desc {
+      @include max-screen(767px) {@include font-size(15);}
+    }
+  }
+  &__logo {flex: 0 0 261px;
+    @include min-screen(768px) {opacity: 0;}
+    @include max-screen(767px) {flex: unset;}
+    img {display: block;
+      @include max-screen(767px) {margin: 0 auto;}
+    }
+  }
+}

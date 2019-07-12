@@ -1,0 +1,113 @@
+.header {background: $color; position: relative;
+	&__container {position: relative; height: $height; max-width: 1366px; z-index: 2;
+		@include max-screen(992px) {height: 0; position: unset;}
+	}
+	&__language {position: absolute; top: 44px; left: 24px;
+		@include max-screen(992px) {display: none;}
+		ul {
+			li {display: inline-block; margin-right: 5px;
+				span, a {display: block; color: #fff; line-height: 23px; @include ffNS; @include font-size(15); letter-spacing: 1px;}
+				span {background: $color; border-radius: 10px; padding: 0 10px;}
+				a {color: #fff;}
+			}
+		}
+	}
+	&__logo {text-align: center; width: 480px; background: #fff; position: absolute; top: 0; left: 50%; transform: translateX(-50%); z-index: 2; height: 286px;
+		@include max-screen(992px) {width: 25.2rem; height: 15rem;}
+		img {display: block; margin: 0 auto 39px; transition: $transition;
+			@include max-screen(992px) {width: 16.7rem; margin-bottom: 2rem;}
+		}
+		@include min-screen(768px) {
+			&:hover {
+				img {opacity: 0.8;
+				}
+			}
+		}
+	}
+	&__h1 {@include font-size(14); @include ffNS;
+		@include max-screen(992px) {@include font-size(8);}
+	}
+	&__catalogue {position: absolute; top: 30px; right: 30px;
+		@include max-screen(992px) {display: none;}
+		a {display: block; line-height: 55px; @include font-size(15); color: #fff; background: $color; border-radius: 100px; @include ffNS; text-transform: uppercase; width: 200px; text-align: center; box-shadow: $boxshadow; letter-spacing: 1px;}
+	}
+	&__navigator {position: fixed; top: 445px; left: 50%; margin-left: -660px; z-index: 99;
+		@include max-screen(1366px) {left: 24px; margin: 0;}
+		@include max-screen(992px) {display: none;}
+		ul {border-left: 1px solid #fff; padding-left: 15px;
+			li {margin-top: 18px;
+				a {color: #fff; display: block; line-height: 35px; position: relative; text-transform: uppercase; font-weight: bold; @include font-size(15);
+					&.active {color: $color;
+						&:before {content: ""; display: block; width: 14px; height: 14px; border-radius: 10px; background: $color; top: 50%; left: -23px; transform: translate(0, -50%); position: absolute;}
+					}
+				}
+			}
+		}
+	}
+	&__carousel {position: absolute; top: 0; left: 0; width: 100%; height: $height; overflow: hidden;
+		@include max-screen(992px) {height: 100vh; position: relative;}
+		.wrap:not(.owl-carousel.owl-loaded) {height: $height; overflow: hidden;
+			@include max-screen(992px) {height: 100vh;}
+		}
+		.owl-carousel.owl-loaded {}
+		.item {height: $height; background: center no-repeat; background-size: cover; padding-top: 380px; line-height: 1.3;
+			@include max-screen(992px) {height: 100vh; padding: 80% 15px 0;}
+			.h2, .h3 {@include ffNS; text-align: center; @include font-size(50); text-shadow: $boxshadow; letter-spacing: 2px; transform: translate(0, 50px); opacity: 0;
+				@include max-screen(992px) {@include font-size(31);}
+			}
+			.h2 {color: $color;}
+			.h3 {color: #fff;}
+		}
+		.owl-item {}
+		.owl-item.active {
+			.h2 {animation: 1s fadeInUp forwards;}
+			.h3 {animation: 1s 0.4s fadeInUp forwards;}
+		}
+	}
+	&__mouse {position: absolute; bottom: 50px; left: 50%; transform: translateX(-50%); z-index: 2;
+		@include max-screen(992px) {display: none;}
+	}
+	&__mouse__mouse {display: block; width: 20px; height: 30px; border: 1px solid #fff; border-radius: 10px;
+		&:before {content: ""; display: block; width: 1px; height: 6px; background: #fff; position: absolute; top: 6px; left: 50%; margin-left: -1px; animation: 1s mouse infinite linear;}
+	}
+	&__mouse__line {display: block; width: 1px; height: 80px; background: rgba(255,255,255,0.5); left: 50%; margin-left: -1px; position: absolute; top: 40px; overflow: hidden;
+		&:before {content: ""; display: block; position: absolute; top: 0; left: 0; width: 1px; height: 30px; background: #fff; animation: 1s mouse_line infinite linear;}
+	}
+	&__owlnav {position: absolute; bottom: 41px; right: 52px; z-index: 2;
+		@include max-screen(992px) {right: auto; left: 50%; transform: translate(-50%, 0); bottom: 20px;}
+		.owl-nav {margin-bottom: 20px; text-align: right;
+			button {-webkit-appearance: none; background: transparent; border: 0; padding: 0; margin: 0 0 0 4px; transition: $transition;
+				span {display: block; width: 44px; height: 44px; background: $background; border-radius: 100px; color: transparent; position: relative;
+					&:before, &:after {content: ""; display: block; width: 1px; height: 12px; background: #fff; transform: rotate(45deg); position: absolute; top: 10px; left: 20px;}
+					&:after {transform: rotate(135deg); top: 19px;}
+				}
+				&.owl-prev {}
+				&.owl-next {transform: rotateZ(180deg);}
+				@include min-screen(768px) {
+					&:hover {opacity: 0.5;}
+				}
+			}
+		}
+		.textNav {@include ffNS; line-height: 1; text-align: right; padding-right: 4px;
+			@include max-screen(992px) {display: none;}
+			.index, .total {display: inline-block; vertical-align: bottom;}
+			.index {color: $color; @include font-size(23); margin-right: 70px;}
+			.total {color: #fff; @include font-size(15);}
+			&:after {content: ""; display: block; width: 60px; height: 1px; background: #fff; position: absolute; bottom: 6px; right: 30px;}
+		}
+	}
+}
+
+@keyframes mouse {
+	0% {top: 6px;}
+	50% {top: 10px;}
+	100% {top: 6px;}
+}
+@keyframes mouse_line {
+	0% {top: -100px;}
+	100% {top: 100%;}
+}
+@keyframes fadeInUp {
+	0% {opacity: 0; transform: translate(0, 50px);}
+	100% {opacity: 1;transform: translate(0, 0);}
+}
