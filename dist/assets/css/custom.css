@@ -1,2 +1,56 @@
 @charset 'UTF-8';
 /*  Add Custom CSS here.  */
+
+.header__carousel .h2,
+.header__carousel .h3{
+	z-index: 999;
+	width: 100%;
+	position: absolute;
+	top: 390px; left: 0;
+	font-family:'Noto Serif', serif;
+	text-align:center;
+	font-size:50px;
+	font-size:5rem;
+	text-shadow:0 5px 5px rgba(0,0,0,0.12);
+	letter-spacing:2px;
+	opacity:0;
+	transition: 0.3s eae all;
+}
+.header__carousel .h3 {top: 450px;}
+.header__carousel .h2{color:#C6A47E}
+.header__carousel .h3{color:#fff}
+.header__carousel .h2{animation:1s fadeInUp forwards}
+.header__carousel .h3{animation:1s 0.4s fadeInUp forwards}
+
+.header__carousel__text {}
+.header__carousel__text.fadeOut {}
+.header__carousel__text.fadeOut .h2,
+.header__carousel__text.fadeOut .h3 {animation: 1s fadeOut forwards;}
+
+.section06__img01,
+.section06__text,
+.section06__logo {opacity: 0;}
+
+.section--half .mainText {white-space: nowrap;}
+
+@keyframes fadeOut {
+	0% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+@media only screen and (max-width: 992px) {
+	.header__carousel .h2,.header__carousel .h3{font-size:31px;font-size:3.1rem}
+}
+@media only screen and (max-width: 767px) {
+	.header__carousel .h2,
+	.header__carousel .h3 {padding: 0 15px; top: 30%;}
+	.header__carousel .h2 {top: 30%;}
+	.header__carousel .h3 {margin-top: 50px;}
+
+	.section06__logo {opacity: 1;}
+
+	a.goToTop {bottom: 20px;}
+}
+@media only screen and (max-width: 374px) {
+
+}
