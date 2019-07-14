@@ -11,8 +11,8 @@
     </div>
     <div class="center_box pc">
       <ul class="list_menu">
-        <li><a href="">HOME</a></li>
-        <li><a href="">ABOUT US</a></li>
+        <li><a href="<?php echo APP_URL ?>">HOME</a></li>
+        <li><a href="<?php echo APP_URL ?>about-us/">ABOUT US</a></li>
       </ul>
       <div class="logo_box">
         <a href="">
@@ -20,8 +20,8 @@
         </a>
       </div>
       <ul class="list_menu list1">
-        <li><a href="">Product</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="<?php echo APP_URL ?>product/">Product</a></li>
+        <li><a href="<?php echo APP_URL ?>contact/">Contact</a></li>
       </ul>
     </div>    
     <div class="header__catalogue header__catalogue1">
