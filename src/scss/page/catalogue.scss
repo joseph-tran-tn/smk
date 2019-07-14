@@ -2,9 +2,10 @@
 @import '../utility/*';
 
 .fadeInUp {animation: 1.5s fadeInUp forwards;}
-
-.catalogue_box{
+.catalogue_wrap{
   background: #343434;
+}
+.catalogue_box{  
   padding: 100px 140px 190px;
   max-width: 1280px;
   margin: 0 auto;

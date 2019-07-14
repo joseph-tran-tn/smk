@@ -18,7 +18,7 @@ include(APP_PATH.'libs/head.php');
       <span>/ Cataloague</span>
     </p>
   </div>
-  <div id="wrap">
+  <div id="wrap" class="catalogue_wrap">
     <section class="catalogue_box">
       <h2 class="ttl">Please take a look at our catalogue below.</h2>
       <div class="slide_box owl-carousel picture itemGal">

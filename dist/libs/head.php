@@ -41,7 +41,7 @@ include(APP_PATH.'libs/argument.php');
 <!--css-->
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif|Noto+Sans+TC&display=swap" rel="stylesheet">
 <link href="<?php echo APP_ASSETS; ?>css/style.min.css" rel="stylesheet" media="all">
-<link href="<?php echo APP_ASSETS; ?>css/custom.css?v=<?php echo time() ?>" rel="stylesheet" media="all">
+<link href="<?php echo APP_ASSETS; ?>css/custom.css" rel="stylesheet" media="all">
 <!--/css-->
 
 <!-- Favicons -->
