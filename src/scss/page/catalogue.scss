@@ -8,6 +8,7 @@
 .catalogue_box{  
   padding: 100px 140px 190px;
   max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
   position: relative;
   .ttl{
@@ -18,7 +19,7 @@
     margin-bottom: 65px;
   }
   @include max-screen(767px) {
-    padding: 25px 0 180px;
+    padding: 25px 0 100px;
     .ttl{
       font-size: 15px;
       margin-bottom: 25px;
@@ -148,7 +149,16 @@
 
 
 
-
+.flip_box{
+  background: #343434;
+  overflow: hidden;
+  .inner_box{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    //padding: 100px 140px 190px;
+  }
+}
 
 
 
