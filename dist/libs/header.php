@@ -10,7 +10,7 @@
 			</ul>
 		</div>
 		<div class="header__logo">
-			<a href="">
+			<a href="<?php echo APP_URL ?>">
 				<img src="<?php echo APP_ASSETS ?>img/common/logo.svg" alt="">
 				<h1 class="header__h1">Quality hospitality Furnishing & Casegoods</h1>
 			</a>
