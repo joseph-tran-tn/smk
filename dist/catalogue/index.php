@@ -23,18 +23,18 @@ include(APP_PATH.'libs/head.php');
       <h2 class="ttl">Please take a look at our catalogue below.</h2>
       <div class="slide_box owl-carousel picture itemGal">
         <div class="item galBox">
-          <a href="<?php echo APP_ASSETS; ?>img/catalogue/img1.jpg" itemprop="contentUrl" data-size="720x405">
-            <img src="<?php echo APP_ASSETS; ?>img/catalogue/img1.jpg" itemprop="thumbnail">
+          <a href="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-02.jpg" itemprop="contentUrl" data-size="720x405">
+            <img src="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-02.jpg" itemprop="thumbnail">
           </a>
         </div>
         <div class="item galBox">
-          <a href="<?php echo APP_ASSETS; ?>img/catalogue/img1.jpg" itemprop="contentUrl" data-size="720x405">
-            <img src="<?php echo APP_ASSETS; ?>img/catalogue/img1.jpg" itemprop="thumbnail">
+          <a href="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-03.jpg" itemprop="contentUrl" data-size="720x405">
+            <img src="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-03.jpg" itemprop="thumbnail">
           </a>
         </div>
         <div class="item galBox">
-          <a href="<?php echo APP_ASSETS; ?>img/catalogue/img1.jpg" itemprop="contentUrl" data-size="720x405">
-            <img src="<?php echo APP_ASSETS; ?>img/catalogue/img1.jpg" itemprop="thumbnail">
+          <a href="<?php echo APP_ASSETS; ?>img/catalogue/atalogue-04.jpg" itemprop="contentUrl" data-size="720x405">
+            <img src="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-04.jpg" itemprop="thumbnail">
           </a>
         </div>      
       </div>  
@@ -115,7 +115,6 @@ include(APP_PATH.'libs/head.php');
           }
         }
       });
-
 
       function counter(event) {
         var element   = event.target;     
