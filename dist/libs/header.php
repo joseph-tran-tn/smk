@@ -21,13 +21,18 @@
 	</div>
 	<div class="header__carousel">
 		<div class="wrap">
-			<div class="item" style="background-image: url(<?php echo APP_ASSETS ?>img/home/slide01.jpg);"></div>
-			<div class="item" style="background-image: url(<?php echo APP_ASSETS ?>img/home/slide02.jpg);"></div>
-			<div class="item" style="background-image: url(<?php echo APP_ASSETS ?>img/home/slide03.jpg);"></div>
-		</div>
-		<div class="header__carousel__text">
-			<h2 class="h2">Quality hospitality</h2>
-			<h3 class="h3">Furnishing & Casegoods</h3>
+			<div class="item" style="background-image: url(<?php echo APP_ASSETS ?>img/home/slide01.jpg);">
+				<h2 class="h2">Quality hospitality</h2>
+				<h3 class="h3">Furnishing & Casegoods</h3>
+			</div>
+			<div class="item" style="background-image: url(<?php echo APP_ASSETS ?>img/home/slide02.jpg);">
+				<h2 class="h2">Quality hospitality</h2>
+				<h3 class="h3">Furnishing & Casegoods</h3>
+			</div>
+			<div class="item" style="background-image: url(<?php echo APP_ASSETS ?>img/home/slide03.jpg);">
+				<h2 class="h2">Quality hospitality</h2>
+				<h3 class="h3">Furnishing & Casegoods</h3>
+			</div>
 		</div>
 	</div>
 	<div class="header__owlnav">

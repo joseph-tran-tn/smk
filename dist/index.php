@@ -167,7 +167,6 @@ var owl = $(".header__carousel .wrap");
 owl.addClass('owl-carousel').owlCarousel({
   autoplay: 1,
   autoplayTimeout: 5000,
-  smartSpeed: 1000,
   animateIn: 'fadeIn',
   animateOut: 'fadeOut',
   items: 1,
@@ -179,31 +178,16 @@ owl.addClass('owl-carousel').owlCarousel({
       $(".header__owlnav .textNav .index").html('0' + (e.item.index))
       $(".header__owlnav .textNav .total").html('0' + e.item.count)
     }
-
-    if(e.item.index == 1 || e.item.index == 0) {
-      $(".header__carousel__text").removeClass("fadeOut")
-    } else {
-      $(".header__carousel__text").addClass("fadeOut")
-    }
   },
   onInitialized: function(e) {}
 })
 $(".owl-next").click(function(){
-  owl.trigger('next.owl.carousel');
-
-  owl.trigger('stop.owl.autoplay');
-  setTimeout(function(){
-    owl.trigger('play.owl.autoplay');
-  },6000)
+  owl.trigger('next.owl.carousel')
 })
 $(".owl-prev").click(function(){
   owl.trigger('prev.owl.carousel')
-
-  owl.trigger('stop.owl.autoplay');
-  setTimeout(function(){
-    owl.trigger('play.owl.autoplay');
-  },6000)
 })
+
 
 $(".groupBox__wrap").addClass('hide')
 $(".groupBox__wrap").on('inview', function(event, isInView) {

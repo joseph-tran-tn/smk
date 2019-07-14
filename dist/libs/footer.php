@@ -88,13 +88,11 @@
     $("html, body").animate({scrollTop: 0}, 300);
   });
 
-  if($(window).width() > 767) {
-    $(".footer__contact__right__block").on('inview', function(event, isInView) {
-      if(isInView) {
-        $(this).addClass('fadeInUp');
-      } else {
-        $(this).removeClass('fadeInUp');
-      }
-    });
-  }
+  $(".footer__contact__right__block").on('inview', function(event, isInView) {
+    if(isInView) {
+      $(this).addClass('fadeInUp');
+    } else {
+      $(this).removeClass('fadeInUp');
+    }
+  });
 </script>
