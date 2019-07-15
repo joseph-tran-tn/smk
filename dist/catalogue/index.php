@@ -94,7 +94,7 @@ include(APP_PATH.'libs/head.php');
     })
     $(document).ready(function() {
       $(".slide_box").owlCarousel({
-        items: 1,
+        items: 2,
         startPosition: 0,
         loop: true,
         nav: true,
@@ -108,10 +108,12 @@ include(APP_PATH.'libs/head.php');
           640:{
             stagePadding: 0,
             loop: true,
+            items: 2,
           },
           300:{
             stagePadding: 50,
             loop: false,
+            items: 1,
           }
         }
       });
