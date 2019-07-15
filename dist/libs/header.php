@@ -16,7 +16,7 @@
 			</a>
 		</div>
 		<div class="header__catalogue">
-			<a href="">Catalogue</a>
+			<a href="<?php echo APP_URL ?>catalogue/">Catalogue</a>
 		</div>
 	</div>
 	<div class="header__carousel">

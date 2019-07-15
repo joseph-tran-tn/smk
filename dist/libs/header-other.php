@@ -15,7 +15,7 @@
         <li><a href="<?php echo APP_URL ?>about-us/">ABOUT US</a></li>
       </ul>
       <div class="logo_box">
-        <a href="">
+        <a href="<?php echo APP_URL ?>">
           <img src="<?php echo APP_ASSETS ?>img/catalogue/logo1.png" alt="SMK">
         </a>
       </div>
@@ -25,7 +25,7 @@
       </ul>
     </div>    
     <div class="header__catalogue header__catalogue1">
-      <a href="">Catalogue</a>
+      <a href="<?php echo APP_URL ?>catalogue/">Catalogue</a>
     </div>
   </div>
   <div class="header__carousel1">
