@@ -23,20 +23,66 @@ include(APP_PATH.'libs/head.php');
       <h2 class="ttl">Please take a look at our catalogue below.</h2>
       <div class="slide_box owl-carousel picture itemGal">
         <div class="item galBox">
-          <a href="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-02.jpg" itemprop="contentUrl" data-size="720x405">
+          <a href="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-01.jpg" itemprop="contentUrl" data-size="1191x852">
+            <img src="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-01.jpg" itemprop="thumbnail">
+          </a>
+        </div>
+        <div class="item galBox">
+          <a href="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-02.jpg" itemprop="contentUrl" data-size="596x842">
             <img src="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-02.jpg" itemprop="thumbnail">
           </a>
         </div>
         <div class="item galBox">
-          <a href="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-03.jpg" itemprop="contentUrl" data-size="720x405">
+          <a href="<?php echo APP_ASSETS; ?>img/catalogue/atalogue-03.jpg" itemprop="contentUrl" data-size="596x842">
             <img src="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-03.jpg" itemprop="thumbnail">
           </a>
         </div>
         <div class="item galBox">
-          <a href="<?php echo APP_ASSETS; ?>img/catalogue/atalogue-04.jpg" itemprop="contentUrl" data-size="720x405">
+          <a href="<?php echo APP_ASSETS; ?>img/catalogue/atalogue-04.jpg" itemprop="contentUrl" data-size="596x842">
             <img src="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-04.jpg" itemprop="thumbnail">
           </a>
-        </div>      
+        </div>
+        <div class="item galBox">
+          <a href="<?php echo APP_ASSETS; ?>img/catalogue/atalogue-05.jpg" itemprop="contentUrl" data-size="596x842">
+            <img src="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-05.jpg" itemprop="thumbnail">
+          </a>
+        </div>
+        <div class="item galBox">
+          <a href="<?php echo APP_ASSETS; ?>img/catalogue/atalogue-06.jpg" itemprop="contentUrl" data-size="596x842">
+            <img src="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-06.jpg" itemprop="thumbnail">
+          </a>
+        </div>
+        <div class="item galBox">
+          <a href="<?php echo APP_ASSETS; ?>img/catalogue/atalogue-07.jpg" itemprop="contentUrl" data-size="596x842">
+            <img src="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-07.jpg" itemprop="thumbnail">
+          </a>
+        </div>
+        <div class="item galBox">
+          <a href="<?php echo APP_ASSETS; ?>img/catalogue/atalogue-08.jpg" itemprop="contentUrl" data-size="596x842">
+            <img src="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-08.jpg" itemprop="thumbnail">
+          </a>
+        </div>
+        <div class="item galBox">
+          <a href="<?php echo APP_ASSETS; ?>img/catalogue/atalogue-09.jpg" itemprop="contentUrl" data-size="596x842">
+            <img src="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-09.jpg" itemprop="thumbnail">
+          </a>
+        </div>
+        <div class="item galBox">
+          <a href="<?php echo APP_ASSETS; ?>img/catalogue/atalogue-10.jpg" itemprop="contentUrl" data-size="596x842">
+            <img src="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-10.jpg" itemprop="thumbnail">
+          </a>
+        </div> 
+        <?php
+          for( $i = 11; $i < 29; $i++ ){
+        ?> 
+            <div class="item galBox">
+              <a href="<?php echo APP_ASSETS; ?>img/catalogue/atalogue-<?php echo $i; ?>.jpg" itemprop="contentUrl" data-size="596x842">
+                <img src="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-<?php echo $i; ?>.jpg" itemprop="thumbnail">
+              </a>
+            </div> 
+        <?php
+          }
+        ?>       
       </div>  
       <div id="counter"></div>   
     </section>
