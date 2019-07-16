@@ -273,7 +273,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 100px 0;
+    padding: 150px 0 100px;
     overflow: auto;
     z-index: 999;
     background: rgb(0,0,0.5);
@@ -282,12 +282,13 @@
       margin-bottom: 20px;
       a{
         display: block;
-        color: #fff;
-        padding: 15px;
+        color: #B79167;
+        padding: 20px;
         border-bottom: 1px solid #818181;
         text-transform: uppercase;
         font-family: 'Noto Serif', serif;
         letter-spacing: 1px;
+        text-align: center;
       }
     }
     .lang{
