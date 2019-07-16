@@ -163,7 +163,7 @@ a.cover_atag {display: block; position: absolute; top: 0; left: 0; right: 0; bot
               background-position: center center !important;
             }
           }
-          img {transition: 1s ease all;}
+          img {transition: 1s ease all; width: 100%;}
           span {position: absolute; color: #434343; @include font-size(20); @include ffNS; bottom: 30px; left: 30px; text-transform: uppercase;
             @include max-screen(767px) {@include font-size(14); left: 15px; bottom: 15px; max-width: 80%;}
           }
@@ -219,7 +219,7 @@ a.cover_atag {display: block; position: absolute; top: 0; left: 0; right: 0; bot
           }
           // img {position: absolute; top: 0; right: 0;}
           @include max-screen(1240px) {background-size: contain;}
-          img {transition: 1s ease all;}
+          img {transition: 1s ease all; width: 100%;}
           span {position: absolute; color: #434343; @include font-size(20); @include ffNS; bottom: 30px; left: 30px; text-transform: uppercase;
             @include max-screen(767px) {left: 15px; @include font-size(14); bottom:15px;}
           }

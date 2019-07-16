@@ -57,7 +57,7 @@
     a {display: block; line-height: 55px; @include font-size(15); color: #fff; background: $color; border-radius: 100px; @include ffNS; text-transform: uppercase; width: 200px; text-align: center; box-shadow: $boxshadow; letter-spacing: 1px;}
   }
   &__catalogue1 {top: 53px; @include max-screen(1140px) { top: 30px}}
-  &__navigator {position: fixed; top: 445px; left: 50%; margin-left: -660px; z-index: 99;
+  &__navigator {position: fixed; top: 445px; left: 30px; z-index: 99;
     @include max-screen(1366px) {left: 24px; margin: 0;}
     @include max-screen(992px) {display: none;}
     ul {border-left: 1px solid #fff; padding-left: 15px;
