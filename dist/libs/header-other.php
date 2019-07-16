@@ -5,14 +5,14 @@
   <div class="container header__container header1__container">
     <div class="header__language header__language1">
       <ul>
-        <li><a href="">Tiếng Việt</a></li>
+        <li><a href="#" onclick="return false">Tiếng Việt</a></li>
         <li><span>English</span></li>
       </ul>
     </div>
     <div class="center_box pc">
       <ul class="list_menu">
         <li><a href="<?php echo APP_URL ?>">HOME</a></li>
-        <li><a href="<?php echo APP_URL ?>about-us/">ABOUT US</a></li>
+        <li><a href="" onclick="return false">ABOUT US</a></li>
       </ul>
       <div class="logo_box">
         <a href="<?php echo APP_URL ?>">
@@ -20,8 +20,8 @@
         </a>
       </div>
       <ul class="list_menu list1">
-        <li><a href="<?php echo APP_URL ?>product/">Product</a></li>
-        <li><a href="<?php echo APP_URL ?>contact/">Contact</a></li>
+        <li><a href="" onclick="return false">Product</a></li>
+        <li><a href="" onclick="return false">Contact</a></li>
       </ul>
     </div>    
     <div class="header__catalogue header__catalogue1">
@@ -48,9 +48,9 @@
     <div class="gnavi">
       <ul class="list_menu">
         <li><a href="<?php echo APP_URL ?>">Home</a></li>
-        <li><a href="">ABOUT US</a></li>
-        <li><a href="">Product</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#" onclick="return false">ABOUT US</a></li>
+        <li><a href="#" onclick="return false">Product</a></li>
+        <li><a href="#" onclick="return false">Contact</a></li>
       </ul>
       <div class="lang">
         <a href="" class="vn">

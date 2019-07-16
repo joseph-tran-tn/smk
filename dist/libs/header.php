@@ -5,7 +5,7 @@
 	<div class="container header__container">
 		<div class="header__language">
 			<ul>
-				<li><a href="">Tiếng Việt</a></li>
+				<li><a href="#" onclick="return false">Tiếng Việt</a></li>
 				<li><span>English</span></li>
 			</ul>
 		</div>
@@ -43,9 +43,9 @@
 	<div class="header__navigator">
 		<ul>
 			<li><a class="active" href="<?php echo APP_URL ?>">Home</a></li>
-			<li><a href="">About Us</a></li>
-			<li><a href="">Product</a></li>
-			<li><a href="">Contact</a></li>
+			<li><a href="#" onclick="return false">About Us</a></li>
+			<li><a href="#" onclick="return false">Product</a></li>
+			<li><a href="#" onclick="return false">Contact</a></li>
 		</ul>
 	</div>
 	<div class="header__mouse">
@@ -61,9 +61,9 @@
     <div class="gnavi">
       <ul class="list_menu">
         <li><a href="<?php echo APP_URL ?>">Home</a></li>
-        <li><a href="">ABOUT US</a></li>
-        <li><a href="">Product</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#" onclick="return false">ABOUT US</a></li>
+        <li><a href="#" onclick="return false">Product</a></li>
+        <li><a href="#" onclick="return false">Contact</a></li>
       </ul>
       <div class="lang">
         <a href="" class="vn">
