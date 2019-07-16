@@ -14,7 +14,7 @@ include(APP_PATH.'libs/head.php');
       <span>/ About</span>
     </p>
   </div>
-  <div id="wrap">
+  <div id="wrap" class="about_wrap">
     <section class="about_box1">
       <div class="inner_box">
         <h2 class="ttl">ABOUT SMK <span>FURNITURE VIETNAM</span></h2>
@@ -46,7 +46,7 @@ include(APP_PATH.'libs/head.php');
         </div>
       </div>
     </section>
-    <section class="about_box2">
+    <section class="about_box2" style="animation-delay: 0.2s;">
       <div class="inner_box">
         <h3 class="ttl">
           SMK production capacity allows us to complete multiple projects simultaneously, <br class="pc">we are also happy to build smaller public space projects.
@@ -104,7 +104,7 @@ include(APP_PATH.'libs/head.php');
           <p class="img">
             <img src="<?php echo APP_ASSETS ?>img/about/img_8.jpg" alt="">
           </p>
-          <div class="txt_box">
+          <div class="txt_box" style="animation-delay: 0.8s;">
             <p class="txt">
               We employ polishing robots to get that perfect <br class="pc">
               surface on stainless steel as well as other metals.<br><br>
@@ -119,8 +119,12 @@ include(APP_PATH.'libs/head.php');
   <?php include(APP_PATH.'libs/footer.php'); ?>
 
   <script>
-    $(document).ready(function() {
-      
+    $(".about_box1, .about_box2, .about_box3, .about_box4").on('inview', function(event, isInView) {
+      if(isInView) {
+        $(this).addClass('fadeInUp');
+      } else {
+        $(this).removeClass('fadeInUp');
+      }
     });
   </script>
 </body>

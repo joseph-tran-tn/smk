@@ -3,8 +3,8 @@
 
 .fadeInUp {animation: 1.5s fadeInUp forwards;}
 
-.catalogue_wrap{
-  background: #343434;
+.about_wrap{
+  background: #272727;
 }
 #about{
   color: #fff;
@@ -18,6 +18,7 @@
   .about_box1{
     background: #272727;
     padding: 100px 15px 65px;
+    opacity: 0;
     .inner_box{
       max-width: 1000px;
       margin: 0 auto;
@@ -132,6 +133,7 @@
     background-size: cover;
     position: relative;
     height: 268px;
+    opacity: 0;
     &:before{
       content: "";
       width: 100%;
@@ -169,6 +171,7 @@
   .about_box3{
     background: #272727;
     padding: 110px 15px 120px;
+    opacity: 0;
     .inner_box{
       max-width: 1000px;
       margin: 0 auto;
@@ -290,6 +293,7 @@
     padding: 100px 15px 110px;
     font-family: "Noto Serif";
     font-weight: normal;
+    opacity: 0;
     img{
       width: 100%;
     }
