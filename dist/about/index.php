@@ -27,7 +27,7 @@ include(APP_PATH.'libs/head.php');
               Gregory Schneider, CEO<br>SMK Corporation.
             </p>
           </div>
-          <div class="box2">
+          <div class="box2" style="animation-delay: 0.2s;">
             <h3 class="ttl_sub">
               SMK furniture Vietnam best quality, price and timely delivery
             </h3>
@@ -46,7 +46,7 @@ include(APP_PATH.'libs/head.php');
         </div>
       </div>
     </section>
-    <section class="about_box2" style="animation-delay: 0.2s;">
+    <section class="about_box2">
       <div class="inner_box">
         <h3 class="ttl">
           SMK production capacity allows us to complete multiple projects simultaneously, <br class="pc">we are also happy to build smaller public space projects.
@@ -65,7 +65,7 @@ include(APP_PATH.'libs/head.php');
           <p class="txt1">Provide instructions on how to unpack and how to install </p>
           <p class="txt1">Report final inspection to General Manager for approval to ship</p>
         </div>
-        <div class="box2">
+        <div class="box2" style="animation-delay: 0.2s;">
           <p class="img">
             <img src="<?php echo APP_ASSETS ?>img/about/img_3.jpg" alt="SMK China factory">
           </p>
@@ -119,7 +119,7 @@ include(APP_PATH.'libs/head.php');
   <?php include(APP_PATH.'libs/footer.php'); ?>
 
   <script>
-    $(".about_box1, .about_box2, .about_box3, .about_box4").on('inview', function(event, isInView) {
+    $(".about_box1 .box1, .about_box1 .box2, .about_box3 .box1, .about_box3 .box2, .about_box4 .box1, .about_box4 .box2, .about_box4 .box3").on('inview', function(event, isInView) {
       if(isInView) {
         $(this).addClass('fadeInUp');
       } else {
