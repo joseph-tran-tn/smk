@@ -42,7 +42,7 @@
 	</div>
 	<div class="header__navigator">
 		<ul>
-			<li><a class="active" href="">Home</a></li>
+			<li><a class="active" href="<?php echo APP_URL ?>">Home</a></li>
 			<li><a href="">About Us</a></li>
 			<li><a href="">Product</a></li>
 			<li><a href="">Contact</a></li>
@@ -52,4 +52,30 @@
 		<span class="header__mouse__mouse"></span>
 		<span class="header__mouse__line"></span>
 	</div>
+  <div class="sp_992">
+     <p class="hamberger">
+      <span class="ham">&nbsp;</span>
+      <span class="ber">&nbsp;</span>
+      <span class="ger">&nbsp;</span>
+    </p>
+    <div class="gnavi">
+      <ul class="list_menu">
+        <li><a href="<?php echo APP_URL ?>">Home</a></li>
+        <li><a href="">ABOUT US</a></li>
+        <li><a href="">Product</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+      <div class="lang">
+        <a href="" class="vn">
+          <span>Tiếng Việt</span>
+        </a>
+        <a href="" class="en">
+          <span class="active">English</span>
+        </a>
+      </div>
+      <p class="catelogue">
+        <a href="<?php echo APP_URL; ?>catalogue/"><span>CATALOGUE</span></a>
+      </p>
+    </div>
+  </div>
 </header>

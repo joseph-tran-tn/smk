@@ -36,7 +36,7 @@
   </div>
   <div class="sp_992">
     <div class="logo_box">
-      <a href="">
+      <a href="<?php echo APP_URL ?>">
         <img src="<?php echo APP_ASSETS ?>img/catalogue/logo1.png" alt="SMK">
       </a>
     </div>
@@ -47,7 +47,7 @@
     </p>
     <div class="gnavi">
       <ul class="list_menu">
-        <li><a href="">Home</a></li>
+        <li><a href="<?php echo APP_URL ?>">Home</a></li>
         <li><a href="">ABOUT US</a></li>
         <li><a href="">Product</a></li>
         <li><a href="">Contact</a></li>

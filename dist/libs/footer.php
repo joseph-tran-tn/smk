@@ -87,6 +87,10 @@
     event.preventDefault();
     $("html, body").animate({scrollTop: 0}, 300);
   });
+  $(".hamberger").on("click", function(e){
+    $(".gnavi").slideToggle(500);
+    $("body").toggleClass("isFixed")
+  })
 
   $(".footer__contact__right__block").on('inview', function(event, isInView) {
     if(isInView) {
