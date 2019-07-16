@@ -12,7 +12,7 @@
     <div class="center_box pc">
       <ul class="list_menu">
         <li><a href="<?php echo APP_URL ?>">HOME</a></li>
-        <li><a href="" onclick="return false">ABOUT US</a></li>
+        <li><a href="<?php echo APP_URL ?>about/">ABOUT US</a></li>
       </ul>
       <div class="logo_box">
         <a href="<?php echo APP_URL ?>">
@@ -48,7 +48,7 @@
     <div class="gnavi">
       <ul class="list_menu">
         <li><a href="<?php echo APP_URL ?>">Home</a></li>
-        <li><a href="#" onclick="return false">ABOUT US</a></li>
+        <li><a href="<?php echo APP_URL ?>about/">ABOUT US</a></li>
         <li><a href="#" onclick="return false">Product</a></li>
         <li><a href="#" onclick="return false">Contact</a></li>
       </ul>
