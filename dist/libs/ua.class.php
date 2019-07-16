@@ -3,7 +3,7 @@ class UserAgent{
 	private $ua;
 	private $device;
 	public function set(){
-		$this->ua = mb_strtolower($_SERVER['HTTP_USER_AGENT']);
+		$this->ua = strtolower($_SERVER['HTTP_USER_AGENT']);
 		if(strpos($this->ua,'iphone') !== false){
 			$this->device = 'mobile';
 		}elseif(strpos($this->ua,'ipod') !== false){
