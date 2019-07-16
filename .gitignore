@@ -20,6 +20,9 @@ wp/
 ehthumbs.db
 Thumbs.db
 
+# ignore gulp generated files
+*.map
+
 # ignore log files and databases
 *.log
 
