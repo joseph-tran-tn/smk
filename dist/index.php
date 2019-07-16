@@ -3,7 +3,7 @@ $thisPageName = 'top';
 include_once(dirname(__FILE__) . '/app_config.php');
 include(APP_PATH.'libs/head.php');
 ?>
-<link rel="stylesheet" href="<?php echo APP_ASSETS ?>css/page/top.min.css">
+<link rel="stylesheet" href="<?php echo APP_ASSETS ?>css/page/top.min.css?v=1">
 <link rel="stylesheet" href="<?php echo APP_ASSETS ?>libs/owlCarousel2/owlCarousel.min.css">
 </head>
 <body id="top" class='top'>
@@ -81,22 +81,22 @@ include(APP_PATH.'libs/head.php');
         <div class="section--half__right">
           <div class="products clearfix">
             <div class="products__item" style="background-image: url(<?php echo APP_ASSETS ?>img/home/sec04_pro02.png);">
-              <!-- <img src="<?php echo APP_ASSETS ?>img/home/sec04_pro02.png" alt=""> -->
+              <img src="<?php echo APP_ASSETS ?>img/home/sec04_pro02.png" alt="">
               <span>Sofa Sleeper</span>
               <a href="" class="cover_atag">Sofa Sleeper</a>
             </div>
             <div class="products__item" style="background-image: url(<?php echo APP_ASSETS ?>img/home/sec04_pro03.png);">
-              <!-- <img src="<?php echo APP_ASSETS ?>img/home/sec04_pro03.png" alt=""> -->
+              <img src="<?php echo APP_ASSETS ?>img/home/sec04_pro03.png" alt="">
               <span>Coffee Table</span>
               <a href="" class="cover_atag">Coffee Table</a>
             </div>
             <div class="products__item" style="background-image: url(<?php echo APP_ASSETS ?>img/home/sec04_pro04.png);">
-              <!-- <img src="<?php echo APP_ASSETS ?>img/home/sec04_pro04.png" alt=""> -->
+              <img src="<?php echo APP_ASSETS ?>img/home/sec04_pro04.png" alt="">
               <span>Upholstery Furniture</span>
               <a href="" class="cover_atag">Upholstery Furniture</a>
             </div>
             <div class="products__item" style="background-image: url(<?php echo APP_ASSETS ?>img/home/sec04_pro05.png);">
-              <!-- <img src="<?php echo APP_ASSETS ?>img/home/sec04_pro05.png" alt=""> -->
+              <img src="<?php echo APP_ASSETS ?>img/home/sec04_pro05.png" alt="">
               <span>Chair</span>
               <a href="" class="cover_atag">Chair</a>
             </div>
@@ -116,22 +116,22 @@ include(APP_PATH.'libs/head.php');
         <div class="section--half__left">
           <div class="products">
             <div class="products__item" style="background-image: url(<?php echo APP_ASSETS ?>img/home/sec04_pro06.png);">
-              <!-- <img src="<?php echo APP_ASSETS ?>img/home/sec04_pro06.png" alt=""> -->
+              <img src="<?php echo APP_ASSETS ?>img/home/sec04_pro06.png" alt="">
               <span>CLASSICAL EUROPEAN FURNITURE</span>
               <a href="" class="cover_atag">CLASSICAL EUROPEAN FURNITURE</a>
             </div>
             <div class="products__item" style="background-image: url(<?php echo APP_ASSETS ?>img/home/sec04_pro07.png);">
-              <!-- <img src="<?php echo APP_ASSETS ?>img/home/sec04_pro07.png" alt=""> -->
+              <img src="<?php echo APP_ASSETS ?>img/home/sec04_pro07.png" alt="">
               <span>Outdoor Furniture</span>
               <a href="" class="cover_atag">Outdoor Furniture</a>
             </div>
             <div class="products__item" style="background-image: url(<?php echo APP_ASSETS ?>img/home/sec04_pro08.png);">
-              <!-- <img src="<?php echo APP_ASSETS ?>img/home/sec04_pro08.png" alt=""> -->
+              <img src="<?php echo APP_ASSETS ?>img/home/sec04_pro08.png" alt="">
               <span>Table</span>
               <a href="" class="cover_atag">Table</a>
             </div>
             <div class="products__item" style="background-image: url(<?php echo APP_ASSETS ?>img/home/sec04_pro09.png);">
-              <!-- <img src="<?php echo APP_ASSETS ?>img/home/sec04_pro09.png" alt=""> -->
+              <img src="<?php echo APP_ASSETS ?>img/home/sec04_pro09.png" alt="">
               <span>Solid Wood Furniture</span>
               <a href="" class="cover_atag">Solid Wood Furniture</a>
             </div>
