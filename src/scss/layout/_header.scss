@@ -144,6 +144,38 @@
     }
   }
 }
+.bread_cumb_box{
+  text-align: center;
+  font-family: 'Noto Serif', serif;
+  position: absolute;
+  top: 230px;
+  width: 100%;
+  left: 0;
+  .ttl_h1{
+    font-size: 60px;
+    line-height: 1.2;
+    color: #B79167;
+    letter-spacing: 1px;    
+  }
+  .txt_bread{
+    a, span{
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+      color: #fff;
+      font-size: 15px;
+    }
+    span{
+      color: #B79167;
+    }
+  }
+  @include max-screen(992px) {
+    top: 130px;
+    .ttl_h1{
+      font-size: 40px;
+    }
+  }
+}
 .center_box{
   position: absolute;
   width: 66%;

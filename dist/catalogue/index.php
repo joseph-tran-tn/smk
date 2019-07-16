@@ -58,7 +58,6 @@ include(APP_PATH.'libs/head.php');
   
   <?php include(APP_PATH.'libs/footer.php'); ?>
   <script src="<?php echo APP_ASSETS ?>js/jquery.fancybox.min.js"></script>
-  <!-- //photoswipe -->
   <script src="<?php echo APP_ASSETS ?>libs/owlCarousel2/owlCarousel.min.js"></script>
   <script>
     $(document).ready(function() {
@@ -98,7 +97,9 @@ include(APP_PATH.'libs/head.php');
         $('#counter').html( item +" / " +items)
       }
 
-      $(".fancybox").fancybox();
+      $(".fancybox").fancybox({
+        showNavArrows: true,
+      });
 
     });
   </script>
