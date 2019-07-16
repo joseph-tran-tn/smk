@@ -231,7 +231,7 @@
     left: 50%;
     transform: translateX(-50%);
     max-width: 167px;
-    z-index: 9;
+    z-index: 10;
     top: 0;
     a, img{
       display: inline-block;
@@ -275,7 +275,7 @@
     height: 100%;
     padding: 150px 0 100px;
     overflow: auto;
-    z-index: 999;
+    z-index: 9;
     background: rgb(0,0,0.5);
     display: none;
     .list_menu{

@@ -25,8 +25,13 @@ include(APP_PATH.'libs/head.php');
             <img src="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-01-01.jpg">
           </a>
         </div>
+        <div class="item galBox">
+          <a class="fancybox" rel="group" href="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-01-02.jpg">
+            <img src="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-01-02.jpg">
+          </a>
+        </div>
         <?php
-          for( $i = 2; $i < 29; $i++ ){
+          for( $i = 2; $i < 28; $i++ ){
         ?> 
             <div class="item galBox">
               <a class="fancybox" rel="group" href="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-<?php echo ($i<10) ? '0'.$i : $i; ?>.jpg">
@@ -37,8 +42,13 @@ include(APP_PATH.'libs/head.php');
           }
         ?>
         <div class="item galBox">
-          <a class="fancybox" rel="group" href="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-01-02.jpg">
-            <img src="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-01-02.jpg">
+          <a class="fancybox" rel="group" href="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-28-01.jpg">
+            <img src="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-28-01.jpg">
+          </a>
+        </div>
+         <div class="item galBox">
+          <a class="fancybox" rel="group" href="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-28-02.jpg">
+            <img src="<?php echo APP_ASSETS; ?>img/catalogue/catalogue-28-02.jpg">
           </a>
         </div>
       </div>
