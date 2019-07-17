@@ -138,7 +138,6 @@ include(APP_PATH.'libs/head.php');
         $(this).addClass('active')
 
         var id = $(this).attr("data-id");
-        console.log(id)
         if( id == "tab1"){
           $("#tab1").addClass('active')
           $("#tab2").removeClass('active')
