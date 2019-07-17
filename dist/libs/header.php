@@ -44,8 +44,8 @@
 		<ul>
 			<li><a class="active" href="<?php echo APP_URL ?>">Home</a></li>
 			<li><a href="<?php echo APP_URL ?>about/">About Us</a></li>
-			<li><a href="#" onclick="return false">Product</a></li>
-			<li><a href="#" onclick="return false">Contact</a></li>
+			<li><a href="<?php echo APP_URL ?>products/" onclick="return false">Product</a></li>
+			<li><a href="<?php echo APP_URL ?>contact/" onclick="return false">Contact</a></li>
 		</ul>
 	</div>
 	<div class="header__mouse">
@@ -62,8 +62,8 @@
       <ul class="list_menu">
         <li><a href="<?php echo APP_URL ?>">Home</a></li>
         <li><a href="<?php echo APP_URL ?>about/">ABOUT US</a></li>
-        <li><a href="#" onclick="return false">Product</a></li>
-        <li><a href="#" onclick="return false">Contact</a></li>
+        <li><a href="<?php echo APP_URL ?>products/" onclick="return false">Product</a></li>
+        <li><a href="<?php echo APP_URL ?>contact/" onclick="return false">Contact</a></li>
       </ul>
       <div class="lang">
         <a href="" class="vn">

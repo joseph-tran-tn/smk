@@ -1,239 +1,154 @@
 <?php
-session_start();
-header("Cache-control: public"); 
-ob_start();
-include_once(dirname(__DIR__) . '/app_config.php');
 $thisPageName = 'contact';
+include_once('../app_config.php');
 include(APP_PATH.'libs/head.php');
 ?>
-<meta http-equiv="Expires" content="86400">
-<meta name="format-detection" content="telephone=no">
 <link rel="stylesheet" href="<?php echo APP_ASSETS ?>css/page/contact.min.css">
-<link rel="stylesheet" href="<?php echo APP_ASSETS ?>css/form/validationEngine.jquery.css">
 </head>
-<body id="contact">
-<!-- HEADER -->
-<?php include(APP_PATH.'libs/header.php'); ?>
-<div class="mainImg"><h2>CONTACT<span>お問い合わせ</span></h2></div>
-<form method="post" class="form-1" id="form-1" action="confirm/?g=<?php echo time() ?>" name="form1" onSubmit="return check()">
-	<div class="formBlock container">
-		<p class="txtContact">
-			ご質問等に関しては、以下のフォームよりお問い合わせ下さい。<br>
-			必要項目を入力して確認ボタンを押してください。<br>
-			（<em>【必須】</em>は入力必須項目です）
-		</p>
+<body id="contact" class='contact'>
+  <?php include(APP_PATH.'libs/header-other.php'); ?>
+  <div class="bread_cumb_box">
+    <h1 class="ttl_h1">About <span style="color: #fff;">us</span></h1>
+    <p class="txt_bread">
+      <a href="<?php echo APP_URL; ?>">Home</a>
+      <span>/ About</span>
+    </p>
+  </div>
+  <div id="wrap" class="contact_wrap">
+    <div class="contact_box1">
+      <div class="tab_box">
+        <a href="javascript:void(0)" data-id="tab2">
+          <span>USA</span>
+        </a>
+        <a href="javascript:void(0)" class="active" data-id="tab1">
+          <span>VIETNAM</span>
+        </a>
+      </div>
+      <div class="content_box clearfix active" id="tab1">
+        <div class="box1">
+          <div class="map_box">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3917.5129541804504!2d106.71144881584092!3d10.924571192221078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174d76f41d6df9f%3A0xd7395100398c7e22!2sIndustrial+Park+Vietnam+-+Singapore!5e0!3m2!1sen!2snl!4v1563326966649!5m2!1sen!2snl" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="box2">
+          <ul class="inner_box">
+            <li>
+              <div class="box icon1">
+                <h3 class="ttl">SMK FURNITURE FACTORY</h3>
+                <p class="txt">
+                  VN: Land No.67,68,172, Map No.13, Tan Phuoc Khanh 10<br>
+                  Str, Tan Phuoc Khanh Ward, Tan Uyen Town, Binh Duong Province.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="box icon2">
+                <h3 class="ttl">Phone</h3>
+                <p class="txt">+84 089 814 5650</p>
+              </div>
+            </li>
+            <li>
+              <div class="box icon3">
+                <h3 class="ttl">Email</h3>
+                <p class="txt">mk@smk-resources.com</p>
+              </div>
+            </li>
+            <li>
+              <div class="box icon4">
+                <h3 class="ttl">Website</h3>
+                <p class="txt">www.smk-furniture.com</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content_box clearfix" id="tab2">
+        <div class="box1">
+          <div class="map_box">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.759997554834!2d-74.00066328379236!3d40.745306279328375!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259ba50d97867%3A0x932c8beac8cf50d!2sW+23rd+St%2C+New+York%2C+NY%2C+USA!5e0!3m2!1sen!2snl!4v1563335328244!5m2!1sen!2snl" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="box2">
+          <ul class="inner_box">
+            <li>
+              <div class="box icon1">
+                <h3 class="ttl">SMK FURNITURE FACTORY</h3>
+                <p class="txt">
+                  VN: Land No.67,68,172, Map No.13, Tan Phuoc Khanh 10<br>
+                  Str, Tan Phuoc Khanh Ward, Tan Uyen Town, Binh Duong Province.
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="box icon2">
+                <h3 class="ttl">Phone</h3>
+                <p class="txt">+84 089 814 5650</p>
+              </div>
+            </li>
+            <li>
+              <div class="box icon3">
+                <h3 class="ttl">Email</h3>
+                <p class="txt">mk@smk-resources.com</p>
+              </div>
+            </li>
+            <li>
+              <div class="box icon4">
+                <h3 class="ttl">Website</h3>
+                <p class="txt">www.smk-furniture.com</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="contact_box2">
+      <div class="inner_box">
+        <h2 class="ttl">SEND US <span>MESSAGE</span></h2>
+        <form action="#" method="post" class="frm">
+          <div class="form_box">
+            <div class="box">
+              <p class="input">
+                <input type="text" name="username" value="" placeholder="Your name" />
+              </p>
+              <p class="input">
+                <input type="email" name="email" value="" placeholder="Your email" />
+              </p>
+              <p class="input">
+                <input type="tel" name="tel" value="" placeholder="Your phone" />
+              </p>
+            </div>
+            <div class="box">
+              <textarea name="txtcomment" id="txtcomment" cols="30" rows="10" placeholder="Your message"></textarea>
+            </div>
+          </div>
+          <div class="btn_box">
+            <button class="btn" type="submit" value="send">SEND</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div> <!-- #wrap -->
+  
+  <?php include(APP_PATH.'libs/footer.php'); ?>
 
-		<div class="stepImg">
-			<img src="<?php echo APP_ASSETS; ?>img/common/form/img_step01.svg" width="714" height="45" alt="フォームからのお問い合わせ　Step" class="pc" />
-			<img src="<?php echo APP_ASSETS; ?>img/common/form/img_step01SP.svg" width="345" height="55" alt="フォームからのお問い合わせ　Step" class="sp" />
-		</div>
-	
-		<p class="hid_url">Leave this empty: <input type="text" name="url"></p><!-- Anti spam part1: the contact form -->
-		<table class="tableContact" cellspacing="0">
-			<tr>
-				<th><em>【必須】</em>お問い合わせの種類</th>
-				<td>
-					<select name="sl01" id="sl01" class="validate[required]">
-						<option value=""></option>
-						<option value="selectContent1">selectContent1</option>
-						<option value="selectContent2">selectContent2</option>
-					</select>
-				</td>
-			</tr>
-			<tr>
-				<th><em>【必須】</em>お名前</th>
-				<td><input type="text" name="nameuser" id="nameuser" class="validate[required]"></td>
-			</tr>
-			<tr>
-				<th><em>【必須】</em>性別</th>
-				<td>
-					<span class="chkradio" id="radioarray01">
-					<input type="radio" id="male" name="gender" value="男性" class="mr10 validate[required]">
-					<label for="male" class="mr50">男性</label>
-					<input type="radio" id="female" name="gender" value="女性" class="mr10 validate[required]">
-					<label for="female">女性</label>
-					</span>
-				</td>
-			</tr>
-			<tr>
-				<th><em>【必須】</em>Checkbox1</th>
-				<td>
-					<span class="chkcheckbox" id="checkbox01">
-					<input type="checkbox" name="check01[]" id="check01" value="01" class="validate[required]"><label for="check01" class="mr50">01</label>
-					<input type="checkbox" name="check01[]" id="check02" value="02" class="validate[required]"><label for="check02" class="mr50">02</label>
-					<input type="checkbox" name="check01[]" id="check03" value="03" class="validate[required]"><label for="check03" class="mr50">03</label>
-					<input type="checkbox" name="check01[]" id="check04" value="04" class="validate[required]"><label for="check04" class="mr50">04</label>
-					<input type="checkbox" name="check01[]" id="check05" value="05" class="validate[required]"><label for="check05" class="mr50">05</label>
-					</span>
-				</td>
-			</tr>
-			<tr>
-			<th>【任意】会社名</th>
-			<td><input type="text"  name="company" id="company"></td>
-			</tr>
-			<tr>
-				<th>【任意】部署</th>
-				<td><input type="text"  name="department" id="department"></td>
-			</tr>
-			<tr>
-				<th><em>【必須】</em>お電話番号</th>
-			<td>
-				<p class="floatL">
-					<input placeholder="例) 000-000-0000" type="tel"  name="tel" id="tel" class="validate[required,custom[phone]]">
-				</p>
-					<p class="floatL ml10">※半角数字でご記入ください。</p>
-			</td>
-			</tr>
-			<tr>
-				<th>【任意】おFAX番号</th>
-				<td>
-					<p class="floatL"><input placeholder="例) 000-000-0000" type="tel"  name="fax" id="fax" class="validate[custom[phone]]"></p>
-					<p class="floatL ml10">※半角数字でご記入ください。</p>
-				</td>
-			</tr>
-			<tr>
-				<th><em>【必須】</em>郵便番号</th>
-				<td>
-					<div class="clearfix t0b10">
-						<div class="dIB">〒</div>
-						<div class="dIB size01">
-							<input type="text" placeholder="例) 000-0000" name="zipcode" id="zipcode" onKeyUp="AjaxZip3.zip2addr(this,'','pref_name','address01')" class="validate[required,custom[zipcode]]">
-						</div>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<th><em>【必須】</em>住所</th>
-				<td class="clearfix">
-					<select name="pref_name" id="pref_name" class="validate[required]">
-						<option value="" selected>都道府県</option>
-						<option value="北海道">北海道</option>
-						<option value="青森県">青森県</option>
-						<option value="岩手県">岩手県</option>
-						<option value="宮城県">宮城県</option>
-						<option value="秋田県">秋田県</option>
-						<option value="山形県">山形県</option>
-						<option value="福島県">福島県</option>
-						<option value="茨城県">茨城県</option>
-						<option value="栃木県">栃木県</option>
-						<option value="群馬県">群馬県</option>
-						<option value="埼玉県">埼玉県</option>
-						<option value="千葉県">千葉県</option>
-						<option value="東京都">東京都</option>
-						<option value="神奈川県">神奈川県</option>
-						<option value="新潟県">新潟県</option>
-						<option value="富山県">富山県</option>
-						<option value="石川県">石川県</option>
-						<option value="福井県">福井県</option>
-						<option value="山梨県">山梨県</option>
-						<option value="長野県">長野県</option>
-						<option value="岐阜県">岐阜県</option>
-						<option value="静岡県">静岡県</option>
-						<option value="愛知県">愛知県</option>
-						<option value="三重県">三重県</option>
-						<option value="滋賀県">滋賀県</option>
-						<option value="京都府">京都府</option>
-						<option value="大阪府">大阪府</option>
-						<option value="兵庫県">兵庫県</option>
-						<option value="奈良県">奈良県</option>
-						<option value="和歌山県">和歌山県</option>
-						<option value="鳥取県">鳥取県</option>
-						<option value="島根県">島根県</option>
-						<option value="岡山県">岡山県</option>
-						<option value="広島県">広島県</option>
-						<option value="山口県">山口県</option>
-						<option value="徳島県">徳島県</option>
-						<option value="香川県">香川県</option>
-						<option value="愛媛県">愛媛県</option>
-						<option value="高知県">高知県</option>
-						<option value="福岡県">福岡県</option>
-						<option value="佐賀県">佐賀県</option>
-						<option value="長崎県">長崎県</option>
-						<option value="熊本県">熊本県</option>
-						<option value="大分県">大分県</option>
-						<option value="宮崎県">宮崎県</option>
-						<option value="鹿児島県">鹿児島県</option>
-						<option value="沖縄県">沖縄県</option>
-					</select>
-					<div class="clearfix mt10">
-						<p class="floatL"><input placeholder="例) 明石市○○" type="text" name="address01" id="address01" class="validate[required]"></p>
-						<p class="floatL ml10">市区町村・番地など</p>
-					</div>
-					<div class="clearfix mt10">
-						<p class="floatL"><input placeholder="例) ○○○○3F" type="text" name="address02" id="address02"></p>
-						<p class="floatL ml10">建物名など</p>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<th><em>【必須】</em>メールアドレス</th>
-				<td>
-					<p><input placeholder="例) xxxxx@sample.co.jp" type="email" name="email" id="email" class="validate[required,custom[email]]"></p>
-					<p class="mt10"><input placeholder="例) xxxxx@sample.co.jp" type="email"  name="cemail" id="cemail" value="" class="validate[equals[email]]"></p>
-				</td>
-			</tr>
-			<tr>
-				<th><span>【任意】</span>連絡希望の時間帯</th>
-				<td><input type="text"  name="time" id="time"></td>
-			</tr>
-			<tr>
-				<th><em>【必須】</em>お問い合わせ内容</th>
-				<td><textarea name="content" id="content" class="validate[required]"></textarea></td>
-			</tr>
-		</table>
-		<div class="txtContact01">
-			<p class="t0b10">【個人情報の取扱いについて】</p>
-			<ul class="t0b20">
-				<li>・本フォームからお客様が記入・登録された個人情報は、資料送付・電子メール送信・電話連絡などの目的で利用・保管し、第三者に開示・提供することはありません。</li>
-			</ul>
-		</div>
-		<div class="taC">
-			<p><label><input type="checkbox" name="check1" value="ok"><span class="fz14"> 個人情報の取扱いに同意する</span></label></p>
-			<p class="t30b20">
-				<button id="btnConfirm"><span>入力内容を確認する</span></button>
-				<input type="hidden" name="actionFlag" value="confirm">
-			</p>
-		</div>
-		<p class="taC t30b0 txtContact01">上記フォームで送信できない場合は、必要項目をご記入の上、<br class="hidden-xs " />
-		<a id="mailContact" href="#"></a>までメールをお送りください。</p><!-- Anti spam part2: clickable email address -->
-	</div>
-</form>
-<!-- FOOTER -->
-<?php include(APP_PATH.'libs/footer.php'); ?>
-<script src="<?php echo APP_ASSETS; ?>js/form/ajaxzip3.js"></script>
-<script src="<?php echo APP_ASSETS; ?>js/form/jquery.cookie.js"></script>
-<!-- Document: https://github.com/posabsolute/jQuery-Validation-Engine -->
-<script src="<?php echo APP_ASSETS; ?>js/form/jquery.validationEngine.js"></script>
-<script src="<?php echo APP_ASSETS; ?>js/form/languages/jquery.validationEngine-ja.js"></script>
-<script>
-	$(document).ready(function(){
-		$("#form-1").validationEngine({
-			promptPosition: "topLeft",
-			scrollOffset: ($('.header').outerHeight() + 5),
-		});
-		window.onbeforeunload = function(){
-			if(document.form1.check1.checked) {
-				$("html, body").scrollTop($("#form-1").offset().top);
-				$("body").css({opacity:0})
-			}
-		};
-	})
-	function check(){
-		if(!document.form1.check1.checked){
-			window.alert('「個人情報の取扱いに同意する」にチェックを入れて下さい');
-			return false;
-		}
-	}
-	$(document).ready(function() {
-		var address = "xxx" + "@" + "xxxxxxx.com";
-		$("#mailContact").attr("href", "mailto:" + address).text(address);
+  <script>
+    $(window).on("load", function() {
+      $(".tab_box a").on("click", function() {
+        $(".tab_box a").removeClass('active');
+        $(this).addClass('active')
 
-		$('#btnSend').click(function(){
-			$(this).html('<span>送信中...</span>').attr('disabled', 'disabled').css('opacity', '0.7');
-			$('.form-1').submit();
-			consolo.log("send");
-		});
-	});
-</script>
+        var id = $(this).attr("data-id");
+        console.log(id)
+        if( id == "tab1"){
+          $("#tab1").addClass('active')
+          $("#tab2").removeClass('active')
+        }
+        if( id == "tab2"){
+          $("#tab1").removeClass('active')
+          $("#tab2").addClass('active')
+        }
+      })
+    })
+  </script>
 </body>
 </html>

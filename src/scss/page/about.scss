@@ -9,10 +9,10 @@
 #about{
   color: #fff;
   .header__carousel1 .item {
-    background: url(../../img/about/img_main.jpg) center no-repeat!important;
+    background-image: url(../../img/about/img_main.jpg)  !important;
     background-size: cover;
     @include max-screen(767px) {
-      background: url(../../img/about/img_main_sp.jpg) center no-repeat!important;
+      background-image: url(../../img/about/img_main_sp.jpg) !important;
     }
   }
   .about_box1{

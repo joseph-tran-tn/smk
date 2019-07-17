@@ -20,8 +20,8 @@
         </a>
       </div>
       <ul class="list_menu list1">
-        <li><a href="" onclick="return false">Product</a></li>
-        <li><a href="" onclick="return false">Contact</a></li>
+        <li><a href="<?php echo APP_URL ?>products/" onclick="return false">Product</a></li>
+        <li><a href="<?php echo APP_URL ?>contact/" onclick="return false">Contact</a></li>
       </ul>
     </div>    
     <div class="header__catalogue header__catalogue1">
@@ -49,8 +49,8 @@
       <ul class="list_menu">
         <li><a href="<?php echo APP_URL ?>">Home</a></li>
         <li><a href="<?php echo APP_URL ?>about/">ABOUT US</a></li>
-        <li><a href="#" onclick="return false">Product</a></li>
-        <li><a href="#" onclick="return false">Contact</a></li>
+        <li><a href="<?php echo APP_URL ?>products/" onclick="return false">Product</a></li>
+        <li><a href="<?php echo APP_URL ?>contact/" onclick="return false">Contact</a></li>
       </ul>
       <div class="lang">
         <a href="" class="vn">

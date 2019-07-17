@@ -56,9 +56,9 @@
     <div class="container">
       <div class="footer__navigator">
         <ul>
-          <li><a href="">About us</a></li>
-          <li><a href="">Product</a></li>
-          <li><a href="">Contact us</a></li>
+          <li><a href="<?php echo APP_URL ?>about/">About us</a></li>
+          <li><a href="<?php echo APP_URL ?>products/">Product</a></li>
+          <li><a href="<?php echo APP_URL ?>contact/">Contact us</a></li>
         </ul>
       </div>
       <div class="copyrightText">© SMK 2019 All Rights Resevered</div>
